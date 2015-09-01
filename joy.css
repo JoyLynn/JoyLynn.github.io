@@ -1,5 +1,32 @@
-ul li{
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
 
+.nav {
+  margin: 0px;
+  padding: 40px;
+}
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+
+.nav ul{
+margin: 0px;
+float: right;
+padding: 0px 0;
+}
+
+ul li{
+margin: 0;
 display: inline;
-  color:white;
+padding: 10px 0;
 }
