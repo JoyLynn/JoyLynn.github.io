@@ -23,3 +23,119 @@ a {
   text-decoration: none;
 }
 
+/* -------------------------------- 
+
+Slider
+
+-------------------------------- */
+.cd-slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* hide horizontal scrollbar on IE11 */
+  overflow: hidden;
+}
+.cd-slider-wrapper .cd-slider, .cd-slider-wrapper .cd-slider > li {
+  height: 100%;
+  width: 100%;
+}
+
+.cd-slider > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* used to vertically center its content */
+  display: table;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-slider > li.visible {
+  /* selected slide */
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}
+.cd-slider > li:first-of-type {
+  background-color: #4a3553;
+  background-image: url(../img/img-1.jpg);
+}
+.cd-slider > li:nth-of-type(2) {
+  background-color: #ffb251;
+  background-image: url(../img/img-2.jpg);
+}
+.cd-slider > li:nth-of-type(3) {
+  background-color: #7d7160;
+  background-image: url(../img/img-3.jpg);
+}
+.cd-slider > li:nth-of-type(4) {
+  background-color: #ff625a;
+  background-image: url(../img/img-4.jpg);
+}
+.cd-slider > li:first-of-type, .cd-slider > li:nth-of-type(2), .cd-slider > li:nth-of-type(3), .cd-slider > li:nth-of-type(4) {
+  background-size: cover;
+}
+.cd-slider > li > div {
+  /* vertically center the slider content */
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.cd-slider > li h2, .cd-slider > li p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
+  margin: 0 auto 14px;
+  color: #ffffff;
+  width: 90%;
+  max-width: 320px;
+}
+.cd-slider > li h2 {
+  font-size: 2.4rem;
+}
+.cd-slider > li p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+.cd-slider > li .cd-btn {
+  display: inline-block;
+  padding: 1.2em 1.4em;
+  margin-top: .8em;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: .25em;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.no-touch .cd-slider > li .cd-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@media only screen and (min-width: 768px) {
+  .cd-slider > li h2, .cd-slider > li p {
+    max-width: 520px;
+  }
+  .cd-slider > li h2 {
+    font-size: 2.4em;
+    font-weight: 300;
+  }
+  .cd-slider > li .cd-btn {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-slider > li h2, .cd-slider > li p {
+    margin-bottom: 20px;
+  }
+  .cd-slider > li h2 {
+    font-size: 3.2em;
+  }
+  .cd-slider > li p {
+    font-size: 1.8rem;
+  }
+}
