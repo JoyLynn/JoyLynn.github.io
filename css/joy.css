@@ -1,33 +1,25 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 html, body {
-  margin: 0px;
-  padding: 0px;
+  font-size: 62.5%;
 }
 
-.nav {
-  margin: 0px;
-  padding: 20px;
-  background-color: #4fc3f7 light-blue lighten-2;
+body {
+  font-size: 1.6rem;
+  font-family: "Jaldi", sans-serif;
+  color: #4a3553;
+  background-color: #ffffff;
 }
 
-.nav a {
-  color: red;
-  font-size: 15px;
-  font-weight: bold;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-transform: uppercase;
+a {
+  color: #ffb251;
+  text-decoration: none;
 }
 
-.nav ul{
-margin: 0px;
-float: right;
-padding: 0px 0;
-}
-
-ul li{
-margin: 0;
-display: inline;
-padding: 10px 0;
-}
