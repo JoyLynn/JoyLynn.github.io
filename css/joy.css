@@ -286,3 +286,27 @@ Slider navigation
   }
 }
 
+/* -------------------------------- 
+
+svg cover layer
+
+-------------------------------- */
+.cd-svg-cover {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.cd-svg-cover path {
+  fill: #ffe8c9;
+}
+.cd-svg-cover.is-animating {
+  z-index: 4;
+  opacity: 1;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
